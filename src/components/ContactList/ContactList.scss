@@ -1,0 +1,30 @@
+.phonebook__list {
+  width: fit-content;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  li {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    gap: 24px;
+    span {
+      font-size: 18px;
+      font-weight: bold;
+      &:first-child {
+        color: rgb(70, 70, 70);
+      }
+      &:nth-child(2) {
+        color: darkmagenta;
+      }
+    }
+  }
+}
+.phonebook__info {
+  font-size: 20px;
+  font-weight: bold;
+  color: darkmagenta;
+}
