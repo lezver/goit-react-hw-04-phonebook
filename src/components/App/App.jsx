@@ -14,7 +14,7 @@ export const App = () => {
 
   useEffect(() => {
     localStorage.setItem(STOREG_KEY, JSON.stringify(contacts));
-  }, [contacts.toString()]);
+  }, [contacts]);
 
   const handleSearch = ({ currentTarget: { value } }) => setFilter(value);
 
