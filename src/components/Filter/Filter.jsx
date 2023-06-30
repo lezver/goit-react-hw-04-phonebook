@@ -1,15 +1,15 @@
 import './Filter.scss';
 import PropTypes from 'prop-types';
 
-export const Filter = ({ handleSearch }) => {
+export const Filter = ({ search }) => {
   return (
     <label className="phonebook__search">
       Find contact by name:
-      <input type="text" name="filter" onChange={handleSearch} />
+      <input type="text" name="filter" onChange={search} />
     </label>
   );
 };
 
 Filter.propTypes = {
-  handleSearch: PropTypes.func.isRequired,
+  search: PropTypes.func.isRequired,
 };
